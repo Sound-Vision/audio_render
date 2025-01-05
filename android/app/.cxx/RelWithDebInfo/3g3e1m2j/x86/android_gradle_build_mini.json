@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/yanghui/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/.cxx/RelWithDebInfo/3g3e1m2j/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/yanghui/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/.cxx/RelWithDebInfo/3g3e1m2j/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "audio_playout::@6890427a1f51a3e7e1df": {
+      "artifactName": "audio_playout",
+      "abi": "x86",
+      "output": "/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/build/intermediates/cxx/RelWithDebInfo/3g3e1m2j/obj/x86/libaudio_playout.so",
+      "runtimeFiles": []
+    }
+  }
+}

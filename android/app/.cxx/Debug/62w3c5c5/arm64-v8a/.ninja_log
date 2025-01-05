@@ -1,0 +1,4 @@
+# ninja log v5
+0	397	1736069718406918263	CMakeFiles/audio_playout.dir/native-lib.cpp.o	a15feb2be10522e8
+399	452	1736069718460596791	/Users/yanghui/Workspace/github/Sound-Vision/audio_render/audio_render/android/app/build/intermediates/cxx/Debug/62w3c5c5/obj/arm64-v8a/libaudio_playout.so	4d9176a827beb068
+0	6	0	clean	5f38b79f7851f9cb
