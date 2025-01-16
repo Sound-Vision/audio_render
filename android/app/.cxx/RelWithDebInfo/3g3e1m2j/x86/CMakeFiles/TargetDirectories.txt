@@ -1,3 +1,0 @@
-/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/.cxx/RelWithDebInfo/3g3e1m2j/x86/CMakeFiles/audio_playout.dir
-/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/.cxx/RelWithDebInfo/3g3e1m2j/x86/CMakeFiles/edit_cache.dir
-/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/.cxx/RelWithDebInfo/3g3e1m2j/x86/CMakeFiles/rebuild_cache.dir

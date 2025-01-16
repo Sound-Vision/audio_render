@@ -36,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/InitPlayout"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_margin="5dp"
+        android:onClick="stopPlayout"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

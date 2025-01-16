@@ -17,20 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         context = application
-        audioRender = SVAudioTrack.instance
-    }
-
-    /**
-     * A native method that is implemented by the 'audio_playout' native library,
-     * which is packaged with this application.
-     */
-    external fun stringFromJNI(): String
-
-    companion object {
-        // Used to load the 'audio_playout' library on application startup.
-        init {
-            System.loadLibrary("audio_playout")
-        }
+        audioRender = SVNativeAudioRender.instance
     }
 
     fun initPlayout(view: View) {

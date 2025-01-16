@@ -1,1 +1,0 @@
-/Users/yanghui/Workspace/github/Sound-Vision/audio_playout/android/app/src/main/cpp/CMakeLists.txt

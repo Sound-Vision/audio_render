@@ -101,7 +101,7 @@ class SVAudioTrack private constructor() : IAudioRender {
         private var inputStream: InputStream
 
         init {
-            var filesDir = context?.filesDir
+            val filesDir = context?.filesDir
             assert(filesDir != null) { "Please set application." }
             inputStream = context!!.assets.open("haidao.pcm")
         }
