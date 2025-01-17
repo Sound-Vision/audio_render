@@ -45,7 +45,7 @@ class SVNativeAudioRender private constructor(): IAudioRender{
         inputStream?.close()
         outputStream?.close()
 
-        nativeSetRenderType(1,  file.absolutePath)
+        nativeSetRenderType(2,  file.absolutePath)
         return nativeInitRender(sampleRate, channels)
     }
 
