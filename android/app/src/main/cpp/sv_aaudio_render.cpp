@@ -5,10 +5,10 @@
 namespace sv_render {
 
 SVAAudioRender::SVAAudioRender(const std::string& file_path)
-  : file_(nullptr),
-  initialized_(false),
-  builder_(nullptr),
-  stream_(nullptr) {
+  : builder_(nullptr),
+  stream_(nullptr),
+  file_(nullptr),
+  initialized_(false) {
   AV_LOGI("SVAAudioRender Construct");
   file_ = fopen(file_path.c_str(), "rb");
   assert(file_);
@@ -60,7 +60,6 @@ SVAAudioRender::DataCallback(AAudioStream* stream, void* user_data, void* audio_
     return AAUDIO_CALLBACK_RESULT_STOP;
   }
 
-  // memset audio_data.
   int channels = AAudioStream_getChannelCount(stream);
   size_t num_bytes = sizeof(int16_t) * channels * num_frames;
   memset(audio_data, 0, num_bytes);

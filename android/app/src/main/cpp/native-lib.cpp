@@ -4,6 +4,7 @@
 #include "log.h"
 #include "sv_opensl_render.h"
 #include "sv_aaudio_render.h"
+#include "sv_oboe_render.h"
 
 using namespace sv_render;
 
@@ -21,6 +22,8 @@ void NativeSetRecordType(JNIEnv *env, jobject obj, jint type, jstring file_path)
     g_audio_render = std::make_shared<SVOpenslRender>(path);
   } else if (type == AAUDIO) {
     g_audio_render = std::make_shared<SVAAudioRender>(path);
+  } else if (type == OBOE) {
+    g_audio_render = std::make_shared<SVOboeRender>(path);
   }
   g_render_type = static_cast<SV_RENDER_TYPE>(type);
   AV_LOGI("Reset render type %d", g_render_type);

@@ -8,8 +8,6 @@ import java.io.OutputStream
 
 class SVNativeAudioRender private constructor(): IAudioRender{
 
-    private val tag: String = "SVNativeAudioRender"
-
     companion object {
         val instance: SVNativeAudioRender by lazy {
             SVNativeAudioRender()
@@ -24,7 +22,7 @@ class SVNativeAudioRender private constructor(): IAudioRender{
         val dir = context?.filesDir
         assert(dir != null) { "Please set context." }
         val file = File(dir, "haidao.pcm")
-        Log.i(this.tag, "file: ${file.absolutePath}")
+        println("file: ${file.absolutePath}")
         if (!file.exists()) file.createNewFile()
 
         var outputStream: OutputStream? = null
@@ -45,7 +43,7 @@ class SVNativeAudioRender private constructor(): IAudioRender{
         inputStream?.close()
         outputStream?.close()
 
-        nativeSetRenderType(2,  file.absolutePath)
+        nativeSetRenderType(3,  file.absolutePath)
         return nativeInitRender(sampleRate, channels)
     }
 

@@ -11,7 +11,7 @@ class SVAAudioRender  : public INativeAudioRender {
 
 public:
   explicit SVAAudioRender(const std::string& file_path);
-  ~SVAAudioRender();
+  ~SVAAudioRender() override;
   int InitAudioRender(int sample_rate, int channels) override;
   int StartPlayout() override;
   int StopPlayout() override;
